@@ -1,5 +1,5 @@
 fun main() {
-    var userInput = 1
+    var userInput: Int
 
     val opt1 = "White Bread, Ham, Cheese"
     val opt2 = "White Bread, Jelly, Peanut Butter"
@@ -8,6 +8,7 @@ fun main() {
     val opt5 = "Multigrain, Jelly, Peanut Butter"
     val opt6 = "Multigrain, Meatball, Provolone"
 
+    //Takes input from user and checks if it's valid
     do{
         println("Please enter the number of the desired selection below:")
         println("""
@@ -26,6 +27,7 @@ fun main() {
             println("Sorry that is not a valid input. Please try a again")
     }while(userInput < 1 || userInput > 7)
 
+    //Displays user's selection
     if(userInput == 1)
         println("You have selected: $opt1")
     else if(userInput == 2)
